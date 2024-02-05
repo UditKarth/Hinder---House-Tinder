@@ -233,7 +233,6 @@ app.get('/messages', async (req, res) => {
     }
 })
 
-// Add a Message to our Database
 app.post('/message', async (req, res) => {
     const client = new MongoClient(uri)
     const message = req.body.message
